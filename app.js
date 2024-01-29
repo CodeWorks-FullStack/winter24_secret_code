@@ -149,9 +149,11 @@ function addChickenEmoji() {
   const userInputElement = document.getElementById('currentUserInput')
   console.log(userInputElement);
 
+
   userInputElement.innerText = userInput
 }
 
+// NOTE emoji is assigned a value when this function is called. The button elements in my index.html file call this method with an onclick
 function addEmoji(emoji) {
   console.log('This is the emoji you supplied when calling this function', emoji);
 
