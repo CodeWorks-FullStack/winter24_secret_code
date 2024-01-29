@@ -136,7 +136,6 @@ function addSandwichEmoji() {
 
 function addCheeseEmoji() {
   userInput += '🧀'
-  console.log(`You clicked on the 🧀, user input is now ${userInput}`);
 
   const userInputElement = document.getElementById('currentUserInput')
   console.log(userInputElement);
@@ -146,7 +145,17 @@ function addCheeseEmoji() {
 
 function addChickenEmoji() {
   userInput += '🍗'
-  console.log(`You clicked on the 🍗, user input is now ${userInput}`);
+
+  const userInputElement = document.getElementById('currentUserInput')
+  console.log(userInputElement);
+
+  userInputElement.innerText = userInput
+}
+
+function addEmoji(emoji) {
+  console.log('This is the emoji you supplied when calling this function', emoji);
+
+  userInput += emoji
 
   const userInputElement = document.getElementById('currentUserInput')
   console.log(userInputElement);
