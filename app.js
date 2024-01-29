@@ -95,7 +95,30 @@ console.log(`No Value: ${thingWithNoValue}`);
 
 // !SECTION
 
+// SECTION functions
+function buttonClick() {
+  // NOTE message variable lives inside this function only
+  const message = 'Great job!'
+  console.log('You clicked the button!');
+  console.log(message);
+}
+
+// console.log(message); NOTE throws error, scoped
+
+const otherWayToWriteFunction = () => { console.log('I am a function!'); }
+// !SECTION
+
+
 
 // SECTION actual code starts here
+
+const secretCode = '🍗🍗🥪🧀🥪🧀'
+
+function addSandwichEmoji() {
+  let userInput = ''
+  userInput += '🥪'
+  console.log(`You clicked on the 🥪, user input is now ${userInput}`);
+}
+
 
 // !SECTION
