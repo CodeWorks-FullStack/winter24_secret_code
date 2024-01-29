@@ -112,12 +112,18 @@ const otherWayToWriteFunction = () => { console.log('I am a function!'); }
 
 // SECTION actual code starts here
 
+// NOTE global variables, accessible to all code underneath
 const secretCode = '🍗🍗🥪🧀🥪🧀'
+let userInput = ''
 
 function addSandwichEmoji() {
-  let userInput = ''
   userInput += '🥪'
   console.log(`You clicked on the 🥪, user input is now ${userInput}`);
+}
+
+function addCheeseEmoji() {
+  userInput += '🧀'
+  console.log(`You clicked on the 🧀, user input is now ${userInput}`);
 }
 
 
