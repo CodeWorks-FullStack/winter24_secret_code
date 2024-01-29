@@ -88,6 +88,9 @@ console.log(`My name is ${firstName} ${lastName}`); // interpolation
 // SECTION weird stuff
 let undefinedVariable; // undefined
 
+
+//  let undefined = 'banana'  // throws error
+
 let thingWithNoValue = null
 
 console.log(`Undefined: ${undefinedVariable}`);
@@ -124,6 +127,11 @@ function addSandwichEmoji() {
 function addCheeseEmoji() {
   userInput += '🧀'
   console.log(`You clicked on the 🧀, user input is now ${userInput}`);
+}
+
+function addChickenEmoji() {
+  userInput += '🍗'
+  console.log(`You clicked on the 🍗, user input is now ${userInput}`);
 }
 
 
