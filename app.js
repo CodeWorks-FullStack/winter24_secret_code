@@ -119,9 +119,17 @@ const otherWayToWriteFunction = () => { console.log('I am a function!'); }
 const secretCode = '🍗🍗🥪🧀🥪🧀'
 let userInput = ''
 
+
 function addSandwichEmoji() {
   userInput += '🥪'
   console.log(`You clicked on the 🥪, user input is now ${userInput}`);
+
+  // console.log(document.body);
+
+  const userInputElement = document.getElementById('currentUserInput')
+  console.log(userInputElement);
+
+  userInputElement.innerText = userInput
 }
 
 function addCheeseEmoji() {
