@@ -160,6 +160,13 @@ function checkIfUserInputMatchesSecretCode() {
 
   if (userInput == secretCode) {
     console.log('WINNER');
+
+    const secretVideoElement = document.getElementById('secretVideo')
+
+    // NOTE will read a string of HTML only as a string
+    // secretVideoElement.innerText
+
+    secretVideoElement.innerHTML = '<iframe width="560" height="315" src="https://www.youtube.com/embed/B-yUKS3O66A?si=oKdY70LVsssfvQ8Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>'
   }
   // else if (userInput != secretCode) { }
   else {
