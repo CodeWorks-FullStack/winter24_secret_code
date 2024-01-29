@@ -135,11 +135,21 @@ function addSandwichEmoji() {
 function addCheeseEmoji() {
   userInput += '🧀'
   console.log(`You clicked on the 🧀, user input is now ${userInput}`);
+
+  const userInputElement = document.getElementById('currentUserInput')
+  console.log(userInputElement);
+
+  userInputElement.innerText = userInput
 }
 
 function addChickenEmoji() {
   userInput += '🍗'
   console.log(`You clicked on the 🍗, user input is now ${userInput}`);
+
+  const userInputElement = document.getElementById('currentUserInput')
+  console.log(userInputElement);
+
+  userInputElement.innerText = userInput
 }
 
 
