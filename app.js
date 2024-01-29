@@ -157,6 +157,10 @@ function addEmoji(emoji) {
 
   userInput += emoji
 
+  drawUserInput()
+}
+
+function drawUserInput() {
   const userInputElement = document.getElementById('currentUserInput')
   console.log(userInputElement);
 
@@ -180,6 +184,8 @@ function checkIfUserInputMatchesSecretCode() {
   // else if (userInput != secretCode) { }
   else {
     console.log('LOSER');
+    userInput = ''
+    drawUserInput()
   }
 }
 
