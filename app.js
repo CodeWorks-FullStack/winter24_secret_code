@@ -126,9 +126,11 @@ function addSandwichEmoji() {
 
   // console.log(document.body);
 
+  // NOTE pulls a piece of HTML out of DOM
   const userInputElement = document.getElementById('currentUserInput')
-  console.log(userInputElement);
+  console.log('HTML ELEMENT', userInputElement);
 
+  // NOTE changes innertext inside of HTML element
   userInputElement.innerText = userInput
 }
 
@@ -150,6 +152,19 @@ function addChickenEmoji() {
   console.log(userInputElement);
 
   userInputElement.innerText = userInput
+}
+
+function checkIfUserInputMatchesSecretCode() {
+  console.log('user input', userInput);
+  console.log('secret code', secretCode);
+
+  if (userInput == secretCode) {
+    console.log('WINNER');
+  }
+  // else if (userInput != secretCode) { }
+  else {
+    console.log('LOSER');
+  }
 }
 
 
